@@ -1,13 +1,11 @@
 package ie.atu.week5_;
 
 import org.springframework.stereotype.Service;
-
 import java.util.Optional;
 
 @Service
 public class CustomerService {
     private final CustomerRepository customerRepository;
-
 
     public CustomerService(CustomerRepository customerRepository) {
         this.customerRepository = customerRepository;
@@ -25,3 +23,4 @@ public class CustomerService {
         customerRepository.deleteById(customerId);
     }
 }
+
